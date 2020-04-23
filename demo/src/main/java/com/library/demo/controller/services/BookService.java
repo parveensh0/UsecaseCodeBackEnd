@@ -110,41 +110,5 @@ public class BookService {
     		return Result.BOOK_NOT_FOUND;
     	}
     	return Result.FAILURE;
-    } 
-    
-    
-//    /**
-//     *  Create a new Book
-//     *  
-//     * @param entity
-//     * @return
-//     */
-//    public Result updateBook(BookEntity entity) 
-//    {
-//    	try 
-//    	{    		
-//	        Optional<BookEntity> book = repository.findById(entity.getId());         
-//	        if(book.isPresent()) 
-//	        {
-//	        	BookEntity newEntity = book.get();
-//	            newEntity.setName(entity.getName());
-//	            newEntity.setAuthor(entity.getAuthor()); 
-//	            newEntity.setLibrary(entity.getLibrary());
-//	            entity = newEntity;
-//	            return Result.SUCCESS;
-//	        } 
-//	        
-//	        return Result.BOOK_NOT_FOUND;
-//	        
-//	        if(Objects.nonNull(repository.save(entity)))
-//	        {
-//	        	
-//	        }
-//    	} 
-//    	catch(RecordNotFoundException ex)
-//    	{
-//    		
-//    	}
-//    	return Result.FAILURE;
-//    } 
+    }
 }
